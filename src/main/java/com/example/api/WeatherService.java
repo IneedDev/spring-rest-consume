@@ -9,7 +9,7 @@ public class WeatherService {
 
     public WeatherModel getWheather(String city){
 
-        return new RestTemplate().getForObject("http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=42aa5a8d658eea4996bfcf0a7f592ef7", WeatherModel.class);
+        return new RestTemplate().getForObject("http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=", WeatherModel.class);
     //RestTemplate JSNO obiekt na java Obiekt
     }
 

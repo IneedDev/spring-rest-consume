@@ -12,8 +12,7 @@
 <br>
 <h1 th:if="${weather != null}"  th:text="${weather.getMain().getHumidity()}"></h1>
 <br>
-ID
-<h1 th:if="${weather != null}"  th:text="${weather.getMain().getWeather().getId()}"></h1>
+
 <form method="post" action="/" th:object="${weatherForm}">
     <div class="form-group">
         <label>City</label>
